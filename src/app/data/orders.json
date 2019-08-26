@@ -8,6 +8,8 @@
         "handled": false,
         "date": "12/07-19",
         "time": "12:01",
+        "email": "christoffer.bjorn.cajander@gmail.com",
+        "phone": "0722331757",
         "products": [
             { "name": "iPhone X", "brand": "Apple"},
             { "name": "Lightningkabel 1M", "brand": "Apple"}
@@ -20,6 +22,8 @@
         "handled": false,
         "date": "12/07-19",
         "time": "16:23",
+        "email": "morgan.svensson@hotmail.se",
+        "phone": "0722331757",
         "products": [
             { "name": "Galaxy S10", "brand": "Samsung"},
             { "name": "EX-39", "brand": "Sony"}
@@ -32,6 +36,8 @@
         "handled": false,
         "date": "13/07-19",
         "time": "09:38",
+        "email": "johannaaaaa23@yahoo.com",
+        "phone": "0722331757",
         "products": [
             { "name": "iPhone XS Max", "brand": "Apple"},
             { "name": "Airpods", "brand": "Apple"}

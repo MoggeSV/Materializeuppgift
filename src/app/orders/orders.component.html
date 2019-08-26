@@ -11,16 +11,18 @@
                 <h4 [ngClass]="{'not-handled': !order.handled, 'handled': order.handled}" class="not-handled">Order #{{ order.id }}</h4>
                 <h5>Orderinformation</h5></li></div>
               <div class="col s3">
-                <a (click)="toggleHandled(i)" class="btn-floating btn-large waves-effect waves-light green manage-button" title="Toggle Status"><i class="fal fa-check"></i></a>
-                <a (click)="deleteOrder(i)" class="btn-floating btn-large waves-effect waves-light red manage-button"><i class="far fa-minus-circle"></i></a>
+                <a (click)="toggleHandled(i)" class="btn-floating btn-large waves-effect waves-light green manage-button" title="Växla status"><i class="fal fa-check"></i></a>
+                <a (click)="deleteOrder(i)" class="btn-floating btn-large waves-effect waves-light red manage-button" title="Radera order"><i class="far fa-minus-circle"></i></a>
               </div>  
             </div>
-              <li class="collection-item"><i class="fas fa-user"></i> {{ order.fullname }}</li>
+              <li class="collection-item"><i class="fal fa-user"></i> {{ order.fullname }}</li>
               <li class="collection-item"><i class="fal fa-map-pin"></i> {{ order.addressline }}</li>
               <li class="collection-item"><i class="far fa-map-marker-alt"></i> {{ order.zipcode }}</li>
               <li class="collection-item"><i class="far fa-location-arrow"></i> {{ order.city }}</li>
               <li class="collection-item"><i class="far fa-calendar-day"></i> {{ order.date }}</li>
               <li class="collection-item"><i class="fal fa-clock"></i> {{ order.time }}</li>
+              <li class="collection-item"><i class="fal fa-envelope"></i> {{ order.email }}</li>
+              <li class="collection-item"><i class="fal fa-phone-alt"></i> {{ order.phone }}</li>
               <li class="collection-item"><h5>Produkter</h5></li>
               <li class="collection-item" *ngFor="let product of order.products">{{ product.brand + " " + product.name }}</li>
             </ul>
