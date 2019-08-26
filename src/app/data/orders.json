@@ -1,0 +1,16 @@
+[
+    { "id": 0, "fullname": "Christoffer Cajander", "addressline": "Munkgatan 20C", "zipcode": "72212", "city": "Västerås", "products": [
+        { "name": "iPhone X", "brand": "Apple"},
+        { "name": "Lightningkabel 1M", "brand": "Apple"}
+    ] },
+
+    { 
+    "id": 2, "fullname": "Christoffer Cajander",
+    "addressline": "Munkgatan 20C",
+    "zipcode": "72212",
+    "city": "Västerås",
+    "products": [
+        { "name": "iPhone X", "brand": "Apple"},
+        { "name": "Lightningkabel 1M", "brand": "Apple"}
+    ] }
+]
