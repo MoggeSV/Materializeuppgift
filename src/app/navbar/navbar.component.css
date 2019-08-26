@@ -7,6 +7,21 @@
 
 .navLinks {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
+.logoText {
+    font-size: 1.7rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navLinks {
+        font-size: 0.9rem;
+    }
+    .brand-logo i{
+        margin-right: 20px;
+        font-size: 2rem;
+        
+    }
+  }
