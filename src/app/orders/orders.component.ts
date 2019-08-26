@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import sampleData from '../data/orders.json';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-orders',
@@ -11,19 +12,42 @@ export class OrdersComponent implements OnInit {
   orders: any = sampleData;
   selected = this.orders.map((p) => false);
   hasOrders: Boolean = true;
+  unHandled: Number = 0;
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
-    console.log(this.orders[0].fullname);
     this.checkOrders();
+    this.countUnhandled();
+    this.setTitle();
   }
 
+  // Denna funktion uppdaterar titeln så man ser hur många nya ordrar som finns.
+  // Använder sig av den inbyggda Title-servicen som finns i Angular.
+  public setTitle() {
+    this.titleService.setTitle( "(" + this.unHandled + ")" + " Materializeuppgift")
+  }
+
+  // För att få fram antalet ordrar som inte hanterats
+  public countUnhandled = function() {
+    this.unHandled = 0;
+    for(let i = 0; i < this.orders.length; i++) {
+      if(!this.orders[i].handled) {
+        this.unHandled++;
+      }
+    }
+    
+  }
+
+  // Byter mellan hanterad och ohanterad på orderstatus.
   toggleHandled = function(index){
     this.selectedRow = index;
     this.orders[this.selectedRow].handled = !this.orders[this.selectedRow].handled;
+    this.countUnhandled();
+    this.setTitle();
 }
 
+  // Enkel funktion för att kolla om det finna några ordrar.
   checkOrders = function() {
     if(this.orders.length > 0) {
       this.hasOrders = true;
@@ -32,9 +56,12 @@ export class OrdersComponent implements OnInit {
     }
   }
 
-deleteOrder = function(index) {
-  this.orders.splice(index, 1);
-  this.checkOrders();
-}
+  // Denna talar för sig själv
+  deleteOrder = function(index) {
+    this.orders.splice(index, 1);
+    this.checkOrders();
+    this.countUnhandled();
+    this.setTitle();
+  }
 
 }
