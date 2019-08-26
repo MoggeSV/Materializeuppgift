@@ -19,9 +19,9 @@ export class OrdersComponent implements OnInit {
     this.checkOrders();
   }
 
-  setHandled = function(index){
+  toggleHandled = function(index){
     this.selectedRow = index;
-    this.orders[this.selectedRow].handled = true;
+    this.orders[this.selectedRow].handled = !this.orders[this.selectedRow].handled;
 }
 
   checkOrders = function() {
@@ -30,7 +30,6 @@ export class OrdersComponent implements OnInit {
     } else {
       this.hasOrders = false;
     }
-    console.log(this.hasOrders);
   }
 
 deleteOrder = function(index) {

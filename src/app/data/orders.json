@@ -1,16 +1,39 @@
 [
-    { "id": 3898, "fullname": "Christoffer Cajander", "addressline": "Munkgatan 20C", "zipcode": "72212", "city": "Västerås", "products": [
-        { "name": "iPhone X", "brand": "Apple"},
-        { "name": "Lightningkabel 1M", "brand": "Apple"}
-    ] },
+    {
+        "id": 3898, 
+        "fullname": "Christoffer Cajander", 
+        "addressline": "Munkgatan 20C", 
+        "zipcode": "72212", 
+        "city": "Västerås", 
+        "handled": false,
+        "date": "12/07-19",
+        "time": "12:01",
+        "products": [
+            { "name": "iPhone X", "brand": "Apple"},
+            { "name": "Lightningkabel 1M", "brand": "Apple"}
+        ] },
     { 
-    "id": 3899, "fullname": "Morgan Svensson",
-    "addressline": "Morganvägen 12",
-    "zipcode": "37992",
-    "city": "Örebro",
-    "handled": false,
-    "products": [
-        { "name": "Galaxy S10", "brand": "Samsung"},
-        { "name": "EX-39", "brand": "Sony"}
-    ] }
+        "id": 3899, "fullname": "Morgan Svensson",
+        "addressline": "Morganvägen 12",
+        "zipcode": "37992",
+        "city": "Örebro",
+        "handled": false,
+        "date": "12/07-19",
+        "time": "16:23",
+        "products": [
+            { "name": "Galaxy S10", "brand": "Samsung"},
+            { "name": "EX-39", "brand": "Sony"}
+        ] },
+        { 
+        "id": 3900, "fullname": "Johanna Eriksson",
+        "addressline": "Drottninggatan 49",
+        "zipcode": "37992",
+        "city": "Stockholm",
+        "handled": false,
+        "date": "13/07-19",
+        "time": "09:38",
+        "products": [
+            { "name": "iPhone XS Max", "brand": "Apple"},
+            { "name": "Airpods", "brand": "Apple"}
+        ] }
 ]
