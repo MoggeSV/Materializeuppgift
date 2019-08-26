@@ -1,8 +1,11 @@
 <div class="container">
-  <h1><i class="far fa-list"></i> Ordrar</h1>
+  <h1><i class="far fa-list"></i> Ordrar ({{ this.unHandled }} ohanterade) </h1>
+  <!-- Om arrayen med ordrar är tom så visas denna template istället för listan med ordrar -->
   <ng-template #elseBlock>Det finns inga nya ordrar.</ng-template>
+
   <!-- Alla ordrar visas här -->
   <div id="orders" *ngIf="this.hasOrders; else elseBlock" class="row">
+
     <!-- Går igenom varje order och skriver ut dem -->
     <div class="order" *ngFor="let order of orders; let i = index">
         <ul class="collection">
