@@ -7,8 +7,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.component';
 import { ProfileComponent } from './profile/profile.component';
+import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.component';
 
 @NgModule({
   declarations: [
