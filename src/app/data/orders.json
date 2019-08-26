@@ -1,16 +1,16 @@
 [
-    { "id": 0, "fullname": "Christoffer Cajander", "addressline": "Munkgatan 20C", "zipcode": "72212", "city": "Västerås", "products": [
+    { "id": 3898, "fullname": "Christoffer Cajander", "addressline": "Munkgatan 20C", "zipcode": "72212", "city": "Västerås", "products": [
         { "name": "iPhone X", "brand": "Apple"},
         { "name": "Lightningkabel 1M", "brand": "Apple"}
     ] },
-
     { 
-    "id": 2, "fullname": "Christoffer Cajander",
-    "addressline": "Munkgatan 20C",
-    "zipcode": "72212",
-    "city": "Västerås",
+    "id": 3899, "fullname": "Morgan Svensson",
+    "addressline": "Morganvägen 12",
+    "zipcode": "37992",
+    "city": "Örebro",
+    "handled": false,
     "products": [
-        { "name": "iPhone X", "brand": "Apple"},
-        { "name": "Lightningkabel 1M", "brand": "Apple"}
+        { "name": "Galaxy S10", "brand": "Samsung"},
+        { "name": "EX-39", "brand": "Sony"}
     ] }
 ]

@@ -8,12 +8,34 @@ import sampleData from '../data/orders.json';
 })
 export class OrdersComponent implements OnInit {
 
-  Users: any = sampleData;
-  
+  orders: any = sampleData;
+  selected = this.orders.map((p) => false);
+  hasOrders: Boolean = true;
+
   constructor() { }
 
   ngOnInit() {
-
+    console.log(this.orders[0].fullname);
+    this.checkOrders();
   }
+
+  setHandled = function(index){
+    this.selectedRow = index;
+    this.orders[this.selectedRow].handled = true;
+}
+
+  checkOrders = function() {
+    if(this.orders.length > 0) {
+      this.hasOrders = true;
+    } else {
+      this.hasOrders = false;
+    }
+    console.log(this.hasOrders);
+  }
+
+deleteOrder = function(index) {
+  this.orders.splice(index, 1);
+  this.checkOrders();
+}
 
 }
