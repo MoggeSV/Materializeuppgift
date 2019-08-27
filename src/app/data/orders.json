@@ -12,7 +12,8 @@
         "phone": "0722331757",
         "products": [
             { "name": "iPhone X", "brand": "Apple"},
-            { "name": "Lightningkabel 1M", "brand": "Apple"}
+            { "name": "Lightningkabel 1M", "brand": "Apple"},
+            { "name": "Watch 4", "brand": "Apple"}
         ] },
     { 
         "id": 3899, "fullname": "Morgan Svensson",
