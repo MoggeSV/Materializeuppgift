@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Apple iPhone XS",
+        "amount": 1,
+        "price": 12599
+    },
+    {
+        "name": "Apple Airpods Gen. 2",
+        "amount": 1,
+        "price": 1890
+    },
+    {
+        "name": "Apple Lightning cable 1m",
+        "amount": 2,
+        "price": 199
+    }
+]

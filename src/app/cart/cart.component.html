@@ -1,0 +1,37 @@
+<div class="container">
+    <h3>Varukorg</h3>
+    <div class="shopping-cart">
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Antal</th>
+                    <th>Pris</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr *ngFor="let product of cart; let i = index">
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.amount }}</td>
+                        <td>{{ product.amount * product.price }}:-</td>
+                </tr>
+                <tr>
+                    <td><!-- Placeholder --></td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Totalt:</td>
+                    <td></td>
+                    <td>{{ this.total }}:-</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row" id="payButton">
+            <div class="col s6 offset-s6">
+                <a class="waves-effect waves-light btn-large right custombtn"><i class="material-icons left"><i class="fal fa-money-check-edit-alt"></i></i>Gå vidare till kassan</a>
+            </div>    
+        </div>
+    </div>
+</div>
