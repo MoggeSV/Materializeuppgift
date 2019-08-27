@@ -28,4 +28,20 @@ export class CartComponent implements OnInit {
     this.total = currentTotal;
   }
 
+  remove(index) {
+    let amount = this.cart[index].amount - 1;
+    if(amount <= 0) {
+      this.cart.splice(index, 1);
+    } else {
+      this.cart[index].amount -= 1;
+    }
+
+    this.getTotal();
+  }
+
+
+  addAmount(index) {
+    this.cart[index].amount += 1;
+    this.getTotal();
+  }
 }
