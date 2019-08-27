@@ -1,0 +1,16 @@
+.order {
+    margin-top: 50px;
+}
+
+.not-handled {
+    background: rgb(254, 254, 6);
+}
+
+.handled {
+    background: rgb(83, 249, 37);
+}   
+
+.manage-button {
+    margin-top: 30px;
+    margin-right: 10px;
+}
