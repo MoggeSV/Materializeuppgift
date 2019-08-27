@@ -24,10 +24,18 @@
               <li class="collection-item"><i class="far fa-location-arrow"></i> {{ order.city }}</li>
               <li class="collection-item"><i class="far fa-calendar-day"></i> {{ order.date }}</li>
               <li class="collection-item"><i class="fal fa-clock"></i> {{ order.time }}</li>
-              <li class="collection-item"><i class="fal fa-envelope"></i> {{ order.email }}</li>
-              <li class="collection-item"><i class="fal fa-phone-alt"></i> {{ order.phone }}</li>
+              <li class="collection-item"><i class="fal fa-envelope"></i> <a href="mailto:{{ order.email }}"> {{ order.email }}</a></li>
+              <li class="collection-item"><i class="fal fa-phone-alt"></i> <a href="tel:{{ order.phone }}"> {{ order.phone }}</a></li>
               <li class="collection-item"><h5>Produkter</h5></li>
-              <li class="collection-item" *ngFor="let product of order.products">{{ product.brand + " " + product.name }}</li>
+              <li class="collection-item">
+                <table class="striped">
+                  <tbody>
+                      <tr *ngFor="let product of order.products">
+                          <td>{{ product.brand + " " + product.name }}</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
     </div>
   </div>
