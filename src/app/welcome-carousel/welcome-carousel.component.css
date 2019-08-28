@@ -10,9 +10,14 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .slideImage {
-        width: 40vh;
+        width: 46vh;
+    }
+    .slideshow {
+        
+        margin-bottom: 500px;
+        
     }
 
 } 
@@ -21,7 +26,17 @@
 @media only screen and (min-width: 600px) {} 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {} 
+@media only screen and (min-width: 768px) {
+
+    .slideImage {
+        width: 50vh;
+    }
+    .slideshow {
+        
+        margin-bottom: 200px;
+        
+    }
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {} 
