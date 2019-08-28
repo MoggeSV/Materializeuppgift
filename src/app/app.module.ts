@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { CartComponent } from './cart/cart.component';
 import { AboutComponent } from './about/about.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
