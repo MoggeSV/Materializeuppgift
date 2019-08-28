@@ -29,8 +29,8 @@
     margin-left: 0px;
 }
 
-@media screen and (max-width: 721px) {
-    .manage-button {
+@media screen and (max-width: 722px) {
+    .manage-button {    
         margin-top: 5px;
     }
   }
