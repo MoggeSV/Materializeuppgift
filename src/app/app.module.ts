@@ -11,7 +11,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.component';
 import { RegisterComponent } from './register/register.component';
 import { CartComponent } from './cart/cart.component';
+import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,11 +27,12 @@ import { ProductsComponent } from './products/products.component';
     ProfileComponent,
     RegisterComponent,
     CartComponent,
+    AboutComponent,
     ProductsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

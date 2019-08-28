@@ -1,3 +1,6 @@
+.order-top {
+    background: white;
+}
 .order {
     margin-top: 50px;
 }
@@ -24,5 +27,10 @@
 .special-text span {
     float: none;
     margin-left: 0px;
-    
 }
+
+@media screen and (max-width: 722px) {
+    .manage-button {    
+        margin-top: 5px;
+    }
+  }

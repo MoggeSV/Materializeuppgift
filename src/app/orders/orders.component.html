@@ -7,7 +7,7 @@
   <div id="orders" *ngIf="this.hasOrders; else elseBlock" class="row">
 
     <!-- Går igenom varje order och skriver ut dem -->
-    <div class="order" *ngFor="let order of orders; let i = index">
+    <div class="order z-depth-4" *ngFor="let order of orders; let i = index">
         <ul class="collection">
             <div class="order-top row">
               <div class="col s9"><li class="collection-item">

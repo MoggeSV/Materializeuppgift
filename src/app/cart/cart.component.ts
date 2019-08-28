@@ -9,7 +9,8 @@ import sampleData from '../data/cart.json';
 export class CartComponent implements OnInit {
 
   cart: any = sampleData;
-  total = 10;
+  total = 0;
+  itemsAmount = 0;
 
   constructor() { }
 
@@ -18,11 +19,16 @@ export class CartComponent implements OnInit {
   }
 
   getTotal() {
+    this.itemsAmount = 0;
     let currentTotal = 0;
+    let amount = 0;
+
     for(let i = 0; i < this.cart.length; i++) {
-      let amount = this.cart[i].amount;
       let price = this.cart[i].price;
+
+      amount = this.cart[i].amount;
       currentTotal += amount * price;
+      this.itemsAmount += amount;
     }
 
     this.total = currentTotal;
