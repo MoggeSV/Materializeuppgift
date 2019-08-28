@@ -24,3 +24,9 @@
     font-weight: 300;
     margin-top: 40px;
 }
+
+@media screen and (max-width: 722px) {
+    .custombtn  {
+        font-size: 10px;
+    }
+}
