@@ -11,6 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.component';
 import { RegisterComponent } from './register/register.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
