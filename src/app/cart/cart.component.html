@@ -1,7 +1,10 @@
 <div class="container">
-    <h3>Varukorg</h3>
+    <h4 class="special-text"><i class="fal fa-shopping-cart"></i> Varukorg</h4>
     <ng-template #elseBlock>
-        <h1>Din varukorg är tom <i class="far fa-frown"></i></h1>
+        <div class="empty-cart">
+            <h1 class="special-text">Din varukorg är tom <i class="far fa-heart-broken"></i></h1>
+            <p>Dags att fylla på din varukorg, gå till <a href="/products">produkter</a> för att handla.</p>
+        </div>
     </ng-template>
     <div class="shopping-cart" *ngIf="cart.length > 0; else elseBlock">
         <table class="striped">
@@ -19,16 +22,16 @@
                     <td>{{ product.amount }}</td>
                     <td>{{ product.amount * product.price }}:-</td>
                     <td>
-                        
                         <i class="far fa-plus-circle managebutton" (click)="this.addAmount(i)"></i>
                         <i class="far fa-minus-circle managebutton" (click)="this.remove(i)"></i>
                     </td>
                 </tr>
                 <tr>
                 </tr>
-                <tr>
+                <tr class="total-box">
+                <tr style="border-top: 1px solid black">
                     <td>Totalt:</td>
-                    <td></td>
+                    <td>{{ this.itemsAmount}}</td>
                     <td>{{ this.total }}:-</td> 
                     <td></td>
                 </tr>
