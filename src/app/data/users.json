@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "firstname": "Christoffer",
+        "lastname": "Åström",
+        "address": "Sandgärdsgatan 9",
+        "email": "stoffe@stoffe.com",
+        "password": "test123"
+    },
+    {
+        "id": 2,
+        "firstname": "Christoffer",
+        "lastname": "Cajander",
+        "address": "Munkgatan 20C",
+        "email": "christoffer.bjorn.cajander@gmail.com",
+        "password": "test123"
+    },
+    {
+        "id": 3,
+        "firstname": "Morgan",
+        "lastname": "Svensson",
+        "address": "Morganvägen 12C",
+        "email": "morgan.svensson@hotmail.se",
+        "password": "test123"
+    }
+]

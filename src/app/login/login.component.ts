@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import users from '../../app/data/users.json'
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  users: any = users;
+
+
+  constructor() {
+    
+   }
 
   ngOnInit() {
+
   }
 
+  login(e) {
+    e.preventDefault();
+    console.log('test')
+  }
 }

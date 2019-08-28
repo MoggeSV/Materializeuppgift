@@ -4,6 +4,7 @@ import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.co
 import { OrdersComponent } from './orders/orders.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component'
 import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'orders', component: OrdersComponent},
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent},
+  { path: 'register', component: RegisterComponent},
   { path: 'cart', component: CartComponent}
 ];
 
