@@ -11,7 +11,7 @@ export class OrdersComponent implements OnInit {
 
   orders: any = sampleData;
   selected = this.orders.map((p) => false);
-  hasOrders: Boolean = true;
+
   unHandled: Number = 0;
 
   constructor(private titleService: Title) { }
@@ -23,9 +23,8 @@ export class OrdersComponent implements OnInit {
   }
 
   // Denna funktion uppdaterar titeln så man ser hur många nya ordrar som finns.
-  // Använder sig av den inbyggda Title-servicen som finns i Angular.
   public setTitle() {
-    this.titleService.setTitle( "(" + this.unHandled + ")" + " Materializeuppgift")
+    this.titleService.setTitle( "(" + this.unHandled + ")" + " Ordrar - Materializeuppgift")
   }
 
   // För att få fram antalet ordrar som inte hanterats
@@ -38,6 +37,10 @@ export class OrdersComponent implements OnInit {
     }
     
   }
+
+  public hasOrders = function() {
+return false;
+  };
 
   // Byter mellan hanterad och ohanterad på orderstatus.
   toggleHandled = function(index){

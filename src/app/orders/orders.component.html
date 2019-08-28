@@ -1,7 +1,7 @@
 <div class="container">
-  <h1><i class="far fa-list"></i> Ordrar ({{ this.unHandled }} ohanterade) </h1>
-  <!-- Om arrayen med ordrar är tom så visas denna template istället för listan med ordrar -->
-  <ng-template #elseBlock>Det finns inga nya ordrar.</ng-template>
+  <h4 class="special-text"><i class="far fa-list"></i> Ordrar <span *ngIf="this.hasOrders" class="new badge" data-badge-caption="Nya">{{ this.unHandled }}</span></h4>
+  <!-- Om listan med ordrar är tom så visas denna template istället -->
+  <ng-template #elseBlock>Det finns inga ordrar.</ng-template>
 
   <!-- Alla ordrar visas här -->
   <div id="orders" *ngIf="this.hasOrders; else elseBlock" class="row">
@@ -24,11 +24,19 @@
               <li class="collection-item"><i class="far fa-location-arrow"></i> {{ order.city }}</li>
               <li class="collection-item"><i class="far fa-calendar-day"></i> {{ order.date }}</li>
               <li class="collection-item"><i class="fal fa-clock"></i> {{ order.time }}</li>
-              <li class="collection-item"><i class="fal fa-envelope"></i> {{ order.email }}</li>
-              <li class="collection-item"><i class="fal fa-phone-alt"></i> {{ order.phone }}</li>
+              <li class="collection-item"><i class="fal fa-envelope"></i> <a href="mailto:{{ order.email }}"> {{ order.email }}</a></li>
+              <li class="collection-item"><i class="fal fa-phone-alt"></i> <a href="tel:{{ order.phone }}"> {{ order.phone }}</a></li>
               <li class="collection-item"><h5>Produkter</h5></li>
-              <li class="collection-item" *ngFor="let product of order.products">{{ product.brand + " " + product.name }}</li>
+              <li class="collection-item">
+                <table class="striped">
+                  <tbody>
+                      <tr *ngFor="let product of order.products">
+                          <td>{{ product.brand + " " + product.name }}</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
+          </div>
     </div>
-  </div>
 </div>
