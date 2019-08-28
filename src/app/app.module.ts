@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.component';
 import { RegisterComponent } from './register/register.component';
 import { CartComponent } from './cart/cart.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CartComponent } from './cart/cart.component';
     WelcomeCarouselComponent,
     ProfileComponent,
     RegisterComponent,
-    CartComponent
+    CartComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
