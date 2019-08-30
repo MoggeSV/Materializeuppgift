@@ -1,9 +1,15 @@
 
-h5 {
-    text-align: center;
+.container i
+{
+    color: #ee6e73;
+    font-weight: 300;
+    margin-top: 40px;
+    font-size: 30px;
+
 }
 
-.card-image {
-    font-size: 60px;
-    text-align: center;
+.row span
+{
+color: #1d1b1b99;
+font-weight: 700;
 }
