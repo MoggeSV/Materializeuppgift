@@ -1,12 +1,13 @@
-.profil-background {
-    
+#profile-component .container div i {
+  color: #ee6e73;
+  font-weight: 300;
+  margin-top: 40px;
+  font-size: 30px;
 }
 
-h5 {
-    text-align: center;
+#profile-component .container .row h6 span {
+  color: #1d1b1b99;
+  font-weight: 700;
+  
 }
-
-.card-image {
-    font-size: 60px;
-    text-align: center;
-}
+/*# sourceMappingURL=profile.component.css.map */

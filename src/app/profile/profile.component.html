@@ -1,23 +1,13 @@
-<div class="profil-background">
-  <div class="container"><br>
-    <h5><strong> User Profile</strong></h5>
-    <div class="card-image">
-      <i class="fas fa-user-alt"></i>
-    </div>
-  
+    <div class="container"><br>
+    <div>
+      <i class="fas fa-user-alt"> User Profile </i> 
+    </div> <br>
+
     <div class="row">
-      <h6><strong>First Name: </strong>{{profile.firstName}}</h6>
-      <h6><strong>Last Name: </strong>{{profile.lastName}}</h6>
-  
-      <div class="col-md-2">
-        <img style="width:100%" src="{{profile.image}}" alt="">
+        <h6><span>First Name: </span>{{ currentUser.firstname }}</h6>
+        <h6><span>Last Name:  </span>{{ currentUser.lastname }}</h6>
+        <h6><span>Address: </span>{{ currentUser.address }}</h6>
+        <h6><span>Email: </span>{{ currentUser.email }}</h6>
       </div>
-      <div class="col-md-10">
-        <ul>
-          <li class="list-group-item"><strong>Email: </strong>profile.email</li>
-          <li class="list-group-item"><strong>Profil last updated: </strong>profile.updated_at</li>
-        </ul>
   
-      </div>
     </div>
-   

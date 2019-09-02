@@ -13,6 +13,7 @@ import { WelcomeCarouselComponent } from './welcome-carousel/welcome-carousel.co
 import { RegisterComponent } from './register/register.component';
 import { CartComponent } from './cart/cart.component';
 import { AboutComponent } from './about/about.component';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -27,7 +28,8 @@ import { AboutComponent } from './about/about.component';
     ProfileComponent,
     RegisterComponent,
     CartComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
