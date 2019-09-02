@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 import users from '../../app/data/users.json'
+
 
 @Component({
   selector: 'app-login',
@@ -9,18 +11,44 @@ import users from '../../app/data/users.json'
 export class LoginComponent implements OnInit {
 
   users: any = users;
+  form: FormGroup
 
 
-  constructor() {
-    
-   }
+  constructor() {}
 
-  ngOnInit() {
-
+   ngOnInit() {
+    this.form = new FormGroup({
+      email: new FormControl(''),
+      password: new FormControl(''),
+    });
   }
+
 
   login(e) {
+
     e.preventDefault();
-    console.log('test')
+    let result = users.filter(x => x.email === this.form.value.email);
+    
+    if(result[0]) {
+      if(result[0].email === this.form.value.email && result[0].password === this.form.value.password){
+        console.log('Funkar')
+      } else {
+        console.log('ERROR')
+      }
+    } else {
+      console.log('MEGAERROR')
+    }
+
+     
+
+
+
+    
+    console.log(this.form.value.email)
+
+    
+    
+    
   }
+
 }

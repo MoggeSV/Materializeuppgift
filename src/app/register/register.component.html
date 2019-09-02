@@ -1,32 +1,32 @@
-<div class="container center-align">
+<div id="register-section" class="container center-align">
     <h3 class="section">REGISTER NEW ACCOUNT</h3>
     <div class="row section">
-        <form class="col s12 center-align">
+        <form [formGroup]="form" class="col s12 center-align">
             <div class="row">
                 <div class="input-field col s12 m3 offset-m3 center-align">
-                    <input id="firstname" type="text" class="validate">
+                    <input formControlName="firstname" id="firstname" type="text" class="validate">
                     <label for="firstname">First Name</label>
                 </div>
                 <div class="input-field col s12 m3">
-                    <input id="lastname" type="text" class="validate">
+                    <input formControlName="lastname" id="lastname" type="text" class="validate">
                     <label for="lastname">Last Name</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
-                    <input id="address" type="text" class="validate">
+                    <input formControlName="address" id="address" type="text" class="validate">
                     <label for="text">Address</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3 center-align">
-                    <input id="password" type="password" class="validate">
+                    <input formControlName="password" id="password" type="password" class="validate">
                     <label for="password">Password</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
-                    <input id="email" type="email" class="validate">
+                    <input formControlName="email" id="email" type="email" class="validate">
                     <label for="email">Email</label>
                 </div>
             </div>
