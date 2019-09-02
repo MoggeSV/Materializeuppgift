@@ -1,48 +1,53 @@
-.brand-logo i{
-    margin-right: 50px;
-    font-size: 3rem;
-    color: #212121;
+#navigation-bar nav .nav-wrapper .container .brand-logo i {
+  margin-right: 50px;
+  font-size: 3rem;
+  color: #212121;
 }
 
-
-.navLinks {
-    font-weight: 100;
-    font-size: 1.1rem;
-}
-
-.logoText {
-    font-size: 1.7rem;
-}
-
-.sidenav {
-    background: #f5f5f5;
-}
-.sidenav p {
-    padding-left: 10px;
-}
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .brand-logo i {
-        margin-top: 15px;
-    }
-
-} 
-
-@media only screen and (max-width: 422px) {
-    .logoText {
-        font-size: 1.2rem;
-    }
-
-} 
+  #navigation-bar nav .nav-wrapper .container .brand-logo i {
+    margin-top: 15px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
-    .navLinks {
-        font-size: 0.9rem;
-    }
-    .brand-logo i{
-        margin-right: 20px;
-        font-size: 2rem;
-        
-    }
+  #navigation-bar nav .nav-wrapper .container .brand-logo i {
+    margin-right: 20px;
+    font-size: 2rem;
   }
+}
+
+#navigation-bar nav .nav-wrapper .container .brand-logo .logoText {
+  font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 422px) {
+  #navigation-bar nav .nav-wrapper .container .brand-logo .logoText {
+    font-size: 1.2rem;
+  }
+}
+
+#navigation-bar nav .nav-wrapper .container .nav-mobile li .navLinks {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #navigation-bar nav .nav-wrapper .container .nav-mobile li .navLinks {
+    font-size: 0.9rem;
+  }
+}
+
+#navigation-bar .sidenav {
+  background: #f5f5f5;
+}
+
+#navigation-bar .sidenav .container p {
+  padding-left: 10px;
+}
+
+#navigation-bar .sidenav .container li .navLInks {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=navbar.component.css.map */
