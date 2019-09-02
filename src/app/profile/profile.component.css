@@ -1,15 +1,13 @@
-
-.container i
-{
-    color: #ee6e73;
-    font-weight: 300;
-    margin-top: 40px;
-    font-size: 30px;
-
+#profile-component .container div i {
+  color: #ee6e73;
+  font-weight: 300;
+  margin-top: 40px;
+  font-size: 30px;
 }
 
-.row span
-{
-color: #1d1b1b99;
-font-weight: 700;
+#profile-component .container .row h6 span {
+  color: #1d1b1b99;
+  font-weight: 700;
+  
 }
+/*# sourceMappingURL=profile.component.css.map */
