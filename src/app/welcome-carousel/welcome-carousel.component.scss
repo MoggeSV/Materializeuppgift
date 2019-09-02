@@ -1,0 +1,30 @@
+#carousel-home {
+    .slideshow {
+        height: 60vh;
+        background: #f5f5f5;
+        margin-bottom: 200px;
+
+        @media only screen and (max-width: 768px) {
+                margin-bottom: 499px;
+        } 
+        @media only screen and (min-width: 768px) {
+                margin-bottom: 200px;
+        }
+        .carousel {
+            .slideImage {
+                width: 50vh;
+
+                @media only screen and (max-width: 768px) {
+                        width: 46vh;
+                } 
+
+                @media only screen and (min-width: 768px) {
+                        width: 50vh;
+                }
+                img {
+
+                }
+            }
+        }
+    }
+}
