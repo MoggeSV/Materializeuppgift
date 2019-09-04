@@ -1,32 +1,33 @@
 #payButton {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-.managebutton {
-    padding: 1px;
-    cursor: pointer;
+.manage-button {
+  padding: 1px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 772px) {
+  .manage-button {
+    font-size: 10px;
+  }
 }
 
 .total-box {
-    border-top: 1px solid rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .empty-cart {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .empty-cart p {
-    color: rgb(79, 79, 79);
+  color: #4f4f4f;
 }
 
 .special-text {
-    color: #ee6e73;
-    font-weight: 300;
-    margin-top: 40px;
+  color: #ee6e73;
+  font-weight: 300;
+  margin-top: 40px;
 }
-
-@media screen and (max-width: 722px) {
-    .custombtn  {
-        font-size: 10px;
-    }
-}
+/*# sourceMappingURL=cart.component.css.map */
