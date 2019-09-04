@@ -6,7 +6,7 @@
             <p>Dags att fylla på din varukorg, gå till <a href="/products">produkter</a> för att handla.</p>
         </div>
     </ng-template>
-    <div class="shopping-cart" *ngIf="cart.length > 0; else elseBlock">
+    <div id="shopping-cart" class="shopping-cart" *ngIf="cart.length > 0; else elseBlock">
         <table class="striped">
             <thead>
                 <tr>
@@ -22,8 +22,8 @@
                     <td>{{ product.amount }}</td>
                     <td>{{ product.amount * product.price }}:-</td>
                     <td>
-                        <i class="far fa-plus-circle managebutton" (click)="this.addAmount(i)"></i>
-                        <i class="far fa-minus-circle managebutton" (click)="this.remove(i)"></i>
+                        <i class="far fa-plus-circle manage-button" (click)="this.addAmount(i)"></i>
+                        <i class="far fa-minus-circle manage-button" (click)="this.remove(i)"></i>
                     </td>
                 </tr>
                 <tr>
